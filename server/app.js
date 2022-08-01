@@ -43,7 +43,7 @@ app.get("/echo/:content", (request, response) => {
   response.status(418).json({ echoed: content });
 });
 
-app.listen("/pizzas", pizzas);
+app.use("/pizzas", pizzas);
 
 // Tell the Express app to start listening
 // Let the humans know I am running and listening on 4040
