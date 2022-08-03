@@ -1,10 +1,12 @@
 // 'Import' the Express module instead of http
+
 const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const pizzas = require("./routers/pizzas");
 
 // Initialize the Express application
+
 const app = express();
 
 dotenv.config();
